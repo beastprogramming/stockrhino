@@ -1,0 +1,2834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StockRhino | Investing Demystified</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/line-awesome@1.3.0/dist/line-awesome/css/line-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/owl.theme.default.min.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div id="loading" class="w-screen h-screen bg-white fixed z-50">
+
+  </div>
+  <header class="stock-rhino-header fixed w-full h-0 md:flex flex-col md:flex-row z-40">
+    <div class="bg-white pr-2 w-full h-16 order-1 md:order-2 border-b shadow">
+      <div class="flex items-center justify-between">
+        <div class="stock-rhino-logo">
+          <img class="ml-2 h-16" src="https://www.stockrhino.pro/hubfs/StockRhino/logo.png" alt="StockRhino Logo" />
+        </div>
+        <div class="stock-rhino-search hidden visible lg:block">
+          <form class="flex items-center relative ">
+            <input type="text" placeholder="Search"
+              class="bg-gray-100 focus:bg-gray-200 py-2 px-4 rounded-full w-80 border-none">
+            <button type="submit" class="p-2 absolute right-2"><i class="las la-search"></i></button>
+          </form>
+        </div>
+        <div class="stock-rhino-top-menu">
+          <ul class="items-center text-xs font-medium text-blue-500 pr-2 mb-1 divide-x-2 hidden visible lg:flex">
+            <li class="px-1 hover:text-red-600 text-red-500 animate-pulse font-bold"><a href="#"
+                title="Refer & Earn">REFER & EARN</a></li>
+            <li class="px-1 hover:text-blue-700"><a href="#" title="Help">HELP</a></li>
+            <li class="px-1 hover:text-blue-700"><a href="#" title="Chat">CHAT</a></li>
+            <li class="px-1 hover:text-blue-700"><a href="#" title="A-Z Stocks">A-Z STOCKS</a></li>
+            <li class="px-1 hover:text-blue-700"><a href="#" title="Knowledgebase">KNOWLEDGEBASE</a></li>
+            <li class="px-1 hover:text-blue-700"><a href="#" title="Become A Partner">BECOME A PARTNER</a></li>
+            <li class="px-1 hover:text-blue-700"><a href="#" title="Contact Us">CONTACT US</a></li>
+          </ul>
+          <div class="stock-rhino-bottom-menu">
+            <ul class="flex items-center">
+              <li class="px-1 hover:text-blue-500 hidden visible lg:block"><a href="#" title="Watchlist"><i
+                    class="las la-binoculars la-2x"></i></a></li>
+              <li class="px-1 hover:text-blue-500 hidden visible lg:block"><a href="#" title="My Portfolio"><i
+                    class="las la-briefcase la-2x"></i></a></li>
+              <li class="px-1"><a href="#" title="Login/Trade"
+                  class="px-2 py-1 bg-blue-500 text-white font-medium text-sm hidden visible lg:block">LOGIN/TRADE</a>
+              </li>
+
+              <li class="px-1"><a href="#" title="Open An Account"
+                  class="px-2 py-1 bg-blue-500 text-white font-medium text-sm hidden visible lg:block">OPEN AN
+                  ACCOUNT</a></li>
+
+              <li class="px-1 hover:text-blue-500 relative"><a href="#" title="Cart"><i
+                    class="las la-shopping-cart la-2x"></i><span
+                    class="absolute right-0 bg-red-500 text-white p-1 rounded-full h-4 w-4 leading-4 text-sm">0</span></a>
+              </li>
+              <li class="px-1 hover:text-blue-500 hidden visible lg:block"><a href="#" title="Notifications"><i
+                    class="las la-bell la-2x"></i></a></li>
+              <li class="px-2 py-1 bg-blue-500 text-white font-medium text-sm hidden visible lg:block"><a href="#"
+                  title="ASK RHINO">ASK RHINO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="block lg:hidden visible" id="menu-toggle"><i class="las la-bars la-2x"></i></div>
+      </div>
+    </div>
+
+
+
+
+    <div class="md:w-24 w-full order-2 md:order-1">
+      <nav class="stock-rhino-main-nav">
+        <div class="hs-menu-wrapper flyouts hs-menu-flow-vertical">
+          <ul>
+            <li class="hs-menu-item hs-menu-depth-1">
+              <a href="#" role="menuitem"><i class="las la-home la-2x mb-2"></i>Home</a>
+            </li>
+
+            <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children">
+              <a href="javascript:;"><i class="las la-chart-area la-2x mb-2"></i>Trading
+                <br />Advisory</a>
+              <ul class="hs-menu-children-wrapper">
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-chart-bar la-2x"></i>Index Trading</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-chart-bar la-2x"></i>IntraDay Trading</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-chart-bar la-2x"></i>BTST Trading</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-chart-bar la-2x"></i>F & O Trading</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-chart-bar la-2x"></i>Swing Trading</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-chart-bar la-2x"></i>Live Trading
+                    (Assisted)</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-chart-bar la-2x"></i>Commodity
+                    Trading</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-chart-bar la-2x"></i>Currency Trading</a>
+                  <ul class="hs-menu-children-wrapper">
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Fundamental
+                        Research</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Technical
+                        Research</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Commodity
+                        Market Stats</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Why
+                        Commodity</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Margin -
+                        MCX</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-chart-bar la-2x"></i>Fast Profits
+                    Reports</a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children">
+              <a href="javascript:;"><i class="las la-chalkboard-teacher la-2x mb-2"></i>Investment <br />Advisory</a>
+              <ul class="hs-menu-children-wrapper">
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-chart-bar la-2x"></i>Fundamental</a>
+                  <ul class="hs-menu-children-wrapper">
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>StockSelect</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Microcap
+                        Millonaires</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Wealth
+                        Alliance</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Hidden visible
+                        Treasure</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Reserve</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Phase One
+                        Alert</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Exponential
+                        Profits</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>IPO Corner</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>S Features</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Private
+                        Briefing</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Investor
+                        Hour</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Permanent
+                        Wealth Circle</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Latest
+                        Research</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>All
+                        Research</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Multi-Baggers</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Stock
+                    Investments</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Investment
+                    Manager</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Portfolio
+                    Review</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Portfolio
+                    Management</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Wealth
+                    Management</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Members Club</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children">
+              <a href="javascript:;"><i class="las la-chalkboard la-2x mb-2"></i>Training
+                <br />Academy</a>
+              <!-- <ul class="hs-menu-children-wrapper">
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Stock Technical
+                    Analysis</a>
+                    <ul class="hs-menu-children-wrapper">
+                      <li class="
+                            hs-menu-item hs-menu-depth-3 hs-item-has-children
+                          ">
+                        <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Certification In Online Technical Analysis</a>
+                      </li>
+                      <li class="
+                            hs-menu-item hs-menu-depth-3 hs-item-has-children
+                          ">
+                        <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Certification In Online Essential Technical Analysis</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Commodity
+                    Technical Analysis</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Currency Technical
+                    Analysis</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Fundamental
+                    Analysis</a>
+                    <ul class="hs-menu-children-wrapper">
+                      <li class="
+                            hs-menu-item hs-menu-depth-3 hs-item-has-children
+                          ">
+                        <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Certification In Online Equity Research Analysis</a>
+                      </li>
+                      <li class="
+                            hs-menu-item hs-menu-depth-3 hs-item-has-children
+                          ">
+                        <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Certification In Online Equity Valuation And Financial Modeling</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Futures &
+                    Option</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Live Trade
+                    Training</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Money
+                    Management</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Training
+                    Calendar</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Technical Trading
+                    Software</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Derivetives</a>
+                  <ul class="hs-menu-children-wrapper">
+                    <li class="
+                          hs-menu-item hs-menu-depth-3 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Certification In Online Options Strategies</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-3 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Certification In Online Derivative Analytics</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Combo Courses</a>
+                  <ul class="hs-menu-children-wrapper">
+                    <li class="
+                          hs-menu-item hs-menu-depth-3 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Certification In Online Research, Trading & Advisory</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-3 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Trading Mentorship Program - Equity</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>999 Courses</a>
+                  <ul class="hs-menu-children-wrapper">
+                    <li class="
+                          hs-menu-item hs-menu-depth-3 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Technical Trading Made Easy</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-3 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Candlesticks Made Easy</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-3 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Mutual Fund Made Easy</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-3 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>A2Z Of Stock Market For Teens</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul> -->
+            </li>
+
+            <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children">
+              <a href="#" role="menuitem"><i class="las la-coins la-2x mb-2"></i>Mutual Fund
+                <br />Advisory</a>
+              <!-- <ul class="hs-menu-children-wrapper">
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Overview</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Funds we Like</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>SIP we Like</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Model Portfolio</a>
+                </li>
+              </ul> -->
+            </li>
+
+            <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children">
+              <a href="javascript:;"><i class="las la-shield-alt la-2x mb-2"></i>Insurance
+                <br />Advisory</a>
+              <ul class="hs-menu-children-wrapper">
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Health</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Life</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>General</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children">
+              <a href="javascript:;"><i class="las la-calendar la-2x mb-2"></i>Financial
+                <br />Planing</a>
+              <ul class="hs-menu-children-wrapper">
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Assisted
+                    Planner</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Robotic Planner</a>
+                </li>
+              </ul>
+            </li>
+            <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children">
+              <a href="javascript:;"><i class="las la-calendar la-2x mb-2"></i>Todays
+                <br />Market</a>
+              <ul class="hs-menu-children-wrapper">
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Read Todays
+                    Commentry</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Buzzing Stocks</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>List of BSE 30
+                    Stocks</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>All BSE Indices</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>ADRs</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Momentum Moves</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Key Sector
+                    Quotes</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>List of NSE 50
+                    Stocks</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>All NSE Indices</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>FIIs</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>SGX Nifty</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Market Stats</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Other Indices</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>International
+                    Market Indices</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Gold</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Earning</a>
+                </li>
+              </ul>
+            </li>
+
+
+
+            <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children">
+              <a href="javascript:;"><i class="las la-tools la-2x mb-2"></i>Research
+                <br />Tools</a>
+              <ul class="hs-menu-children-wrapper">
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;"><i class="las la-calculator la-2x"></i>Calculators</a>
+                  <ul class="hs-menu-children-wrapper">
+                    <li class="
+                          hs-menu-item hs-menu-depth-2 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>SIP
+                        Calculator</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-2 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Lumpsum
+                        Calculator</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-2 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>SWP
+                        Calculator</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-2 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Mutual Fund
+                        Return Calculator</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-2 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>SSY
+                        Calculator</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-2 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>PPF
+                        Calculator</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-2 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>EPF
+                        Calculator</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-2 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>FD
+                        Calculator</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-2 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>RD
+                        Calculator</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-2 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>NPS
+                        Calculator</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-2 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>HRA
+                        Calculator</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-2 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Retirement
+                        Calculator</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-2 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>EMI
+                        Calculator</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-2 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Car Loan EMI
+                        Calculator</a>
+                    </li>
+                    <li class="
+                          hs-menu-item hs-menu-depth-2 hs-item-has-children
+                        ">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Home Loan EMI
+                        Calculator</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;"><i class="las la-calculator la-2x"></i>Investment
+                    Encyclopedia</a>
+                  <ul class="hs-menu-children-wrapper">
+                    <li class="
+                          hs-menu-item hs-menu-depth-3 hs-item-has-children
+                        ">
+                      <a href="javascript:;"><i class="las la-calculator la-2x"></i>Blogs</a>
+                      <ul class="hs-menu-children-wrapper">
+                        <li class="hs-menu-item hs-menu-depth-4">
+                          <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Stock
+                            Investment</a>
+                        </li>
+                        <li class="hs-menu-item hs-menu-depth-4">
+                          <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Technical
+                            Analysis</a>
+                        </li>
+                        <li class="hs-menu-item hs-menu-depth-4">
+                          <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Mutual
+                            Fund</a>
+                        </li>
+                        <li class="hs-menu-item hs-menu-depth-4">
+                          <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Insurance</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>FAQ’s</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Videos</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Podcasts</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Stock Trend /
+                    Rating</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Stock Analyzer</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Ace Investors
+                    Portfolio</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Change in Trend</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>StockRhino Top
+                    50</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Top 10
+                    Industries</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Rating Checkup</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Sector wise
+                    Stocks</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>F&O Watchlist</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Business News</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Stock Screeners</a>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children">
+              <a href="javascript:;"><i class="las la-box la-2x mb-2"></i>Downloads</a>
+              <ul class="hs-menu-children-wrapper">
+
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;"><i class="las la-calculator la-2x"></i>Demat Account</a>
+                  <ul class="hs-menu-children-wrapper">
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Documents
+                        required for Demat Account</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Demat Account
+                        Basics</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Buying First
+                        Stock</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Transfer
+                        Funds</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Checklist for
+                        Demat Account</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Types of Demat
+                        and Trading Accounts</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Bonus
+                        Shares</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Minor Demat
+                        Account</a>
+                    </li>
+                    <li class="hs-menu-item hs-menu-depth-3">
+                      <a href="javascript:;" role="menuitem"><i class="las la-rupee-sign la-2x"></i>Multiple Demat
+                        Account</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children">
+              <a href="javascript:;"><i class="las la-users la-2x mb-2"></i>About Us</a>
+              <ul class="hs-menu-children-wrapper">
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-play la-2x"></i>Live Tube</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-play la-2x"></i>Member Login</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-play la-2x"></i>Company Profile</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-play la-2x"></i>Management Team</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-play la-2x"></i>Customer Testimonals</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-play la-2x"></i>Student Testimonials</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-play la-2x"></i>Partner Testimonials</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-play la-2x"></i>Our Trading Infra</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-play la-2x"></i>Newsroom</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-play la-2x"></i>Why StockRhino</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-play la-2x"></i>Our Philosophy</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-play la-2x"></i>Careers</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-play la-2x"></i>Payment Methods</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-play la-2x"></i>Affiliate Program</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-play la-2x"></i>Contact Us</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children">
+              <a href="javascript:;"><i class="las la-gavel la-2x mb-2"></i>Legal</a>
+              <ul class="hs-menu-children-wrapper">
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-file-contract la-2x"></i>Disclaimer</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-file-contract la-2x"></i>Privacy
+                    Policy</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-file-contract la-2x"></i>Terms &
+                    Conditions</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-file-contract la-2x"></i>Cancellation +
+                    Refund</a>
+                </li>
+                <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children">
+                  <a href="javascript:;" role="menuitem"><i class="las la-file-contract la-2x"></i>Money Back
+                    Guarantee</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="pt-16 pl-32">
+
+  <!-- Pricing Tab -->
+  <div class="container mx-auto">
+    <div class="py-8 w-full lg:w-5/12">
+      <p class="text-3xl">Let's find you the <span class="font-bold">Best Service</span></p>
+      <div class="grid grid-cols-2 gap-4 my-8">
+        <div class="flex items center">
+          <div class="rounded-full h-8 w-8 flex items-center justify-center border  border-purple-600 p-1 mr-2"><i
+              class="las la-tasks text-2xl text-purple-600"></i></div>
+          <p class="text-sm text-purple-600">50+ insurers with the<br>
+            lowest prices</p>
+        </div>
+        <div class="flex items center">
+          <div class="rounded-full h-8 w-8 flex items-center justify-center border  border-yellow-600 p-1 mr-2"><i
+              class="las la-bolt text-2xl text-yellow-600"></i></div>
+          <p class="text-sm text-yellow-600">Quick, easy &<br>
+            hassle free</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid__accordion container mx-auto mt-8 mb-16">
+
+    <a href="#" class="grid__accordion__item relative" tabindex="1">
+      <div class="absolute -bottom-6 left-0 right-0 bg-blue-100 rounded-md px-1 py-2 -z-20">
+        <p class="text-xs text-center font-medium text-blue-700">Starting From ₹ 999/pm</p>
+      </div>
+      <img class="w-8 h-8 mb-3" src="./assets/images/icons/trading-advisory.png">
+      <p class="text-xs tracking-wide leading-4 font-medium">Trading <br>Advisory</p>
+    </a>
+    <div class="grid__accordion__description">
+      <div class="pr-2 py-8 flex flex-col md:flex-row items-start">
+
+        <div class="pricing-tabs w-100 md:w-1/5">
+          <div
+            class="p-2 text-blue-800 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer activePricingTab bg-blue-100"
+            tabindex="1">Index Trading</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="2">
+            IntraDay Trading</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="3">
+            BTST Trading</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="4">F
+            & O Trading</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="5">
+            Swing Trading</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="6">
+            Live Trading (Assisted)</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="7">
+            Commodity Trading</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="8">
+            Currency Trading</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="9">
+            Fast Profits Reports</div>
+        </div>
+        <div class="pricing-tabs-content w-0 md:w-4/5 pl-2">
+
+          <div class="pricingTabContent text-3xl activePricingTabContent" tabcontentindex="1">
+            <!-- <div class="flex items-center justify-center p-2 rounded-md text-white font-bold w-100 my-8"
+              id="pricingDuration">
+              <div
+                class="bg-blue-700 border border-blue-700 rounded-l p-2 text-center text-sm transition-all cursor-pointer"
+                id="monthlyPricing">Monthly</div>
+              <div
+                class="text-blue-700 border border-blue-700 bg-white p-2 text-center text-sm transition-all cursor-pointer"
+                id="quarterlyPricing">Quarterly</div>
+              <div
+                class="text-blue-700 border border-blue-700 bg-white rounded-r p-2 text-center text-sm transition-all cursor-pointer"
+                id="semiAnnuallyPricing">Semi Annually</div>
+
+            </div> -->
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+
+              <div class="scale-100 hover:scale-105 transform transition-all border rounded-md p-4 relative bg-white">
+                <div class="text-blue-600 font-medium text-lg mb-6 text-center">Cash Intraday</div>
+                <p class="planPrice text-3xl font-bold text-blue-500 text-center" monthly="6999" quarterly="15999"
+                  semiAnually="26999"><span id="price">6999</span> INR</p>
+                <p class="mb-6 text-lg text-gray-400 text-center italic">/mo (excl. GST)</p>
+                <select class="w-full p-1 text-lg text-center mb-6 border">
+                  <option>Monthly</option>
+                  <option>Quarterly</option>
+                  <option>Semi Anually</option>
+                </select>
+                <ul class="mb-6 ">
+
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Required minimum investment INR 50,000/-
+                  </li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Client will get 1-3 recommendation per
+                    trading session.</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Calls will be depending on technical level &
+                    market movements.</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Follow-up during market hours and Sharing of
+                    all-important news via Whatsapp.</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Recommendation availed through WhatsApp on
+                    registered mobile number.</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Place order 1 tick prior to the level for
+                    safe trading.</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Book half quantity on 1st Target and revised
+                    SL at cost.</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Client can trade on recommendation as per
+                    his/her suitability but always need to maintain same volume on every trade.</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>The track record will be maintained
+                    according to the 2,00,000 volume per trade.</li>
+                </ul>
+                <a href="" title=""
+                  class="p-2 rounded text-center text-white bg-blue-500 hover:bg-blue-600 text-lg w-full"
+                  type="button">Choose This Plan</a>
+              </div>
+
+              <div
+                class="scale-100 hover:scale-105 transform transition-all border rounded-md p-4 relative bg-white ">
+                <div class="text-blue-600 font-medium text-lg mb-6 text-center">Future Intraday</div>
+                <p class="planPrice text-3xl font-bold text-blue-500 text-center" monthly="7999" quarterly="17999"
+                  semiAnually="30999"><span id="price">7999</span> INR</p>
+                <p class="mb-6 text-lg text-gray-400 text-center italic">/mo (excl. GST)</p>
+                <select class="w-full p-1 text-lg text-center mb-6 border">
+                  <option>Monthly</option>
+                  <option>Quarterly</option>
+                  <option>Semi Anually</option>
+                </select>
+
+                <ul class="mb-6">
+
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Required minimum investment INR 1,00,000/-
+                  </li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Client will get 1-2 recommendation per
+                    trading session with proper Stop-loss & Target.</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Recommendation will be depending on
+                    technical level & market movements</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Risk & reward ratio 1:1 with respect to
+                    Final TGT and SL.</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Follow-up during market hours and sharing of
+                    all-important news. </li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Recommendations availed through Whatsapp
+                    ONLY on registered mobile number. </li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>NIFTY Review on daily basis, support and
+                    resistance with global market updates.</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Place order 1 tick prior to the level for
+                    safe trading. </li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Book half quantity on 1st Target and revised
+                    SL at cost. </li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Client can trade on recommendation as per
+                    his/her suitability but always need to maintain same volume on every trade. </li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>The track record will be maintained
+                    according to the 2 lot per trade. </li>
+                </ul>
+                <a href="" title=""
+                  class="p-2 rounded text-center text-white bg-blue-700 hover:bg-blue-600 text-lg w-full"
+                  type="button">Choose This Plan</a>
+              </div>
+
+              <div class="scale-100 hover:scale-105 transform transition-all border rounded-md p-4 relative bg-white">
+                <div class="text-blue-600 font-medium text-lg mb-6 text-center">Option Call Put Intraday</div>
+                <p class="planPrice text-3xl font-bold text-blue-500 text-center" monthly="7999" quarterly="17999"
+                  semiAnually="30999"><span id="price">7999</span> INR</p>
+                <p class="mb-6 text-lg text-gray-400 text-center italic">/mo (excl. GST)</p>
+                <select class="w-full p-1 text-lg text-center mb-6 border">
+                  <option>Monthly</option>
+                  <option>Quarterly</option>
+                  <option>Semi Anually</option>
+                </select>
+
+                <ul
+                  class="mb-6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ">
+
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Required minimum investment INR 50,000/-
+                  </li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Client will get 1-2 recommendation per day.
+                  </li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Follow-up during Market hours and Sharing of
+                    all-important news</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>NIFTY Reviews on daily basis, support and
+                    resistance with global market updates. </li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Risk & Reward Ratio 1:1 with respect to
+                    Final TGT and Stop-Loss.</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Recommendation depends on technical research
+                    and valid for intra-day only. </li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Place order 1 tick prior to the level for
+                    safe trading.</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Book half quantity on 1st Target and revised
+                    SL at cost.</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>Client can trade on recommendation as per
+                    his/her suitability but always need to maintain same volume on every trade.</li>
+                  <li class="flex items-start text-sm font-medium opacity-70 leading-snug mb-3 text-gray-800"><i
+                      class="las la-check text-md mr-2 text-blue-500"></i>The track record will be maintained
+                    according to the 2 Lot per trade.</li>
+                </ul>
+                <a href="" title=""
+                  class="p-2 rounded text-center text-white bg-blue-900 hover:bg-blue-600 mb-6 text-lg w-full"
+                  type="button">Choose This Plan</a>
+              </div>
+
+
+            </div>
+
+          </div>
+          <div class="pricingTabContent text-3xl" tabcontentindex="2">Active Tab 2</div>
+          <div class="pricingTabContent text-3xl" tabcontentindex="3">Active Tab 3</div>
+          <div class="pricingTabContent text-3xl" tabcontentindex="4">Active Tab 4</div>
+          <div class="pricingTabContent text-3xl" tabcontentindex="5">Active Tab 5</div>
+          <div class="pricingTabContent text-3xl" tabcontentindex="6">Active Tab 6</div>
+          <div class="pricingTabContent text-3xl" tabcontentindex="7">Active Tab 7</div>
+          <div class="pricingTabContent text-3xl" tabcontentindex="8">Active Tab 8</div>
+          <div class="pricingTabContent text-3xl" tabcontentindex="9">Active Tab 9</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <a href="#" class="grid__accordion__item relative" tabindex="2">
+      <div class="absolute -bottom-6 left-0 right-0 bg-blue-100 rounded-md px-1 py-2 -z-20">
+        <p class="text-xs text-center font-medium text-blue-700">Starting From ₹ 999/pm</p>
+      </div>
+      <img class="w-8 h-8 mb-3" src="./assets/images/icons/investment-advisory.png">
+      <p class="text-xs tracking-wide leading-4 font-medium">Investment <br>Advisory</p>
+    </a>
+    <div class="grid__accordion__description">
+
+      <div class="pr-2 py-8 flex flex-col md:flex-row items-start">
+
+        <div class="pricing-tabs w-100 md:w-1/5">
+          <div
+            class="p-2 text-blue-800 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer activePricingTab bg-blue-100"
+            tabindex="1">Index Trading</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="2">
+            IntraDay Trading</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="3">
+            BTST Trading</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="4">F
+            & O Trading</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="5">
+            Swing Trading</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="6">
+            Live Trading (Assisted)</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="7">
+            Commodity Trading</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="8">
+            Currency Trading</div>
+          <div class="p-2 text-blue-800 bg-blue-50 text-md font-medium mb-2 hover:bg-blue-100 cursor-pointer"
+            tabindex="9">
+            Fast Profits Reports</div>
+        </div>
+        <div class="pricing-tabs-content w-0 md:w-4/5 p-2">
+
+          <div class="text-3xl activePricingTabContent" tabcontentindex="1">
+
+
+
+          </div>
+          <div class="text-3xl" tabcontentindex="2">Active Tab 2</div>
+          <div class="text-3xl" tabcontentindex="3">Active Tab 3</div>
+          <div class="text-3xl" tabcontentindex="4">Active Tab 4</div>
+          <div class="text-3xl" tabcontentindex="5">Active Tab 5</div>
+          <div class="text-3xl" tabcontentindex="6">Active Tab 6</div>
+          <div class="text-3xl" tabcontentindex="7">Active Tab 7</div>
+          <div class="text-3xl" tabcontentindex="8">Active Tab 8</div>
+          <div class="text-3xl" tabcontentindex="9">Active Tab 9</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <a href="//training.stockrhino.pro" target="_blank" class="grid__accordion__item relative" tabindex="3">
+      <div class="absolute -bottom-6 left-0 right-0 bg-blue-100 rounded-md px-1 py-2 -z-20">
+        <p class="text-xs text-center font-medium text-blue-700">Starting From ₹ 999/pm</p>
+      </div>
+      <img class="w-8 h-8 mb-3" src="./assets/images/icons/training-academy.png">
+      <p class="text-xs tracking-wide leading-4 font-medium">Training <br>Academy</p>
+    </a>
+    <a href="//rhinomf.stockrhino.pro" target="_blank" class="grid__accordion__item relative" tabindex="4">
+      <div class="absolute -bottom-6 left-0 right-0 bg-blue-100 rounded-md px-1 py-2 -z-20">
+        <p class="text-xs text-center font-medium text-blue-700">Starting From ₹ 999/pm</p>
+      </div>
+      <img class="w-8 h-8 mb-3" src="./assets/images/icons/mutual-fund-advisory.png">
+      <p class="text-xs tracking-wide leading-4 font-medium">Mutual Fund<br> Advisory</p>
+    </a>
+    <a href="#" class="grid__accordion__item relative" tabindex="5">
+      <div class="absolute -bottom-6 left-0 right-0 bg-blue-100 rounded-md px-1 py-2 -z-20">
+        <p class="text-xs text-center font-medium text-blue-700">Starting From ₹ 999/pm</p>
+      </div>
+      <img class="w-8 h-8 mb-3" src="./assets/images/icons/insurance-advisory.png">
+      <p class="text-xs tracking-wide leading-4 font-medium">Insurance <br>Advisory</p>
+    </a>
+    <div class="grid__accordion__description">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-2">
+        <a href="" class="text-lg font-medium text-blue-800 p-1 hover:bg-blue-50 rounded text-left pl-2"
+          title="">Health</a>
+        <a href="" class="text-lg font-medium text-blue-800 p-1 hover:bg-blue-50 rounded text-left pl-2"
+          title="">Life</a>
+        <a href="" class="text-lg font-medium text-blue-800 p-1 hover:bg-blue-50 rounded text-left pl-2"
+          title="">General</a>
+      </div>
+    </div>
+    <a href="#" class="grid__accordion__item relative" tabindex="6">
+      <div class="absolute -bottom-6 left-0 right-0 bg-blue-100 rounded-md px-1 py-2 -z-20">
+        <p class="text-xs text-center font-medium text-blue-700">Starting From ₹ 999/pm</p>
+      </div>
+      <img class="w-8 h-8 mb-3" src="./assets/images/icons/financial-planing.png">
+      <p class="text-xs tracking-wide leading-4 font-medium">Financial <br>Planning</p>
+    </a>
+    <div class="grid__accordion__description">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-2">
+        <a href="" class="text-lg font-medium text-blue-800 p-1 hover:bg-blue-50 rounded text-left pl-2"
+          title="">Assisted Planner</a>
+        <a href="" class="text-lg font-medium text-blue-800 p-1 hover:bg-blue-50 rounded text-left pl-2"
+          title="">Robotic Planner</a>
+      </div>
+    </div>
+    <a href="#" class="grid__accordion__item relative" tabindex="7">
+      <div class="absolute -bottom-6 left-0 right-0 bg-blue-100 rounded-md px-1 py-2 -z-20">
+        <p class="text-xs text-center font-medium text-blue-700">Starting From ₹ 999/pm</p>
+      </div>
+      <img class="w-8 h-8 mb-3" src="./assets/images/icons/todays-market.png">
+      <p class="text-xs tracking-wide leading-4 font-medium">Todays <br>Market</p>
+    </a>
+    <a href="#" class="grid__accordion__item relative" tabindex="8">
+      <div class="absolute -bottom-6 left-0 right-0 bg-blue-100 rounded-md px-1 py-2 -z-20">
+        <p class="text-xs text-center font-medium text-blue-700">Starting From ₹ 999/pm</p>
+      </div>
+      <img class="w-8 h-8 mb-3" src="./assets/images/icons/research-Tools.png">
+      <p class="text-xs tracking-wide leading-4 font-medium">Research <br>Tools</p>
+    </a>
+  </div>
+  <!-- Feature Slider -->
+  <section class="featurebanner container mx-auto my-8">
+    <div class="owl-carousel owl-theme">
+
+      <div  class="rounded-xl p-4 item bg-blue-400">
+        <div class="flex items-center justify-between mb-4">
+            <div class="flex flex-col text-xs text-white">
+              <i class="las la-coins la-2x mb-1"></i>
+              <p>Investment Plans</p>
+            </div>
+            <img src="https://www.stockrhino.pro/hubfs/StockRhino/icons/financial-planing.png" alt="" class="featurebannerimg">
+        </div>
+        <div class="featurebanner-detail text-xl font-bold text-white">
+          <p>Invest <span>₹</span> 5 k per<br> month &amp; get <br><span>₹ 64.4 L</span> in return<sup>#</sup></p>
+        </div>
+      </div>
+
+      <div  class="rounded-xl p-4 item bg-red-400">
+        <div class="flex items-center justify-between mb-4">
+            <div class="flex flex-col text-xs text-white">
+              <i class="las la-coins la-2x mb-1"></i>
+              <p>Investment Plans</p>
+            </div>
+            <img src="https://www.stockrhino.pro/hubfs/StockRhino/icons/financial-planing.png" alt="" class="featurebannerimg">
+        </div>
+        <div class="featurebanner-detail text-xl font-bold text-white">
+          <p>Invest <span>₹</span> 5 k per<br> month &amp; get <br><span>₹ 64.4 L</span> in return<sup>#</sup></p>
+        </div>
+      </div>
+
+      <div  class="rounded-xl p-4 item bg-indigo-400">
+        <div class="flex items-center justify-between mb-4">
+            <div class="flex flex-col text-xs text-white">
+              <i class="las la-coins la-2x mb-1"></i>
+              <p>Investment Plans</p>
+            </div>
+            <img src="https://www.stockrhino.pro/hubfs/StockRhino/icons/financial-planing.png" alt="" class="featurebannerimg">
+        </div>
+        <div class="featurebanner-detail text-xl font-bold text-white">
+          <p>Invest <span>₹</span> 5 k per<br> month &amp; get <br><span>₹ 64.4 L</span> in return<sup>#</sup></p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- Trusted By You -->
+
+  <!-- Customer Testimonial -->
+  <section class="container mx-auto py-8">
+    <div class="text-3xl leading-wide p-0 mt-6 mb-4 font-medium font-gray-800">What Our Customers <br> Are Saying<span class="bg-blue-700 w-2/12 h-1 mt-4 block"></span></div>
+    <div class="owl-carousel owl-theme">
+      <div class="item bg-white rounded-md p-8 border h-64">
+        <p class="text-sm font-bold text-center pb-4">Sonia Khanna</p>
+        <p class="testimonial-copy text-gray-700 text-sm text-center">
+          Got good deal without agent calling or speaking to anyone!!
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Here to help -->
+  <section class="container mx-auto py-8">
+    <div class="text-3xl leading-wide p-0 my-6 font-medium font-gray-800">Have a question? <br> Here to help.<span class="bg-blue-700 w-2/12 h-1 mt-4 block"></span></div>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+      <div class="md:col-span-2">
+        <p class="text-gray-700 text-lg text-center mb-4">Our friendly customer support team is your extended family. Speak your heart out. They listen with undivided attention to resolve your concerns. Give us a call, request a callback or drop us an email, we’re here to help.</p>
+        <div class="p-4 rounded-lg bg-white border flex items-center mb-4">
+          <i class="lab la-telegram la-2x mr-2"></i>
+          <div>
+            <p class="text-lg font-medium text-gray-500 mb-1">General Enquiries</p>
+            <a href="mailto:support@stockrhino.pro?Subject=General Enquiries" class="text-lg text-gray-800 mb-2 font-bold">support@stockrhino.pro</a>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-lg bg-white border flex items-center">
+          <i class="las la-headphones la-2x mr-2"></i>
+          <div>
+            <p class="text-lg font-medium text-gray-500 mb-1">Customer Sales Enquiries</p>
+            <a href="tel:1800-208-8787" class="text-lg text-gray-800 mb-2 font-bold">1800-208-8787</a>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-3 text-right">
+        <img class="w-3/5 mx-auto" src="https://www.stockrhino.pro/hubfs/StockRhino/help.png" alt="Enquiries">
+      </div>
+    </div>
+  </section>
+
+  <!-- StockRhino Services -->
+  <section class="container mx-auto py-8">
+    <div class="flex items-center flex-col lg:flex-row">
+      <div class="w-full lg:w-2/6 lg:mr-10">
+      <img class="w-full" alt="services" src="https://www.stockrhino.pro/hubfs/StockRhino/girlInBlue.svg">
+      </div>
+      <div class="w-full lg:w-4/6">
+        <h3 class="text-4xl mb-2 font-regular">StockRhino proudly boasts of <span class="text-purple-500">all</span> <span class="text-blue-700">financial services</span> under one roof.</h3>
+        <h4 class="text-xl">We strive to provide a rich investment experience with transparent and high quality premium services backed by an unparalleled strong team of professionals.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why StockRhino -->
+  <section class="container mx-auto py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-6 gap-4">
+      <div class="lg:col-span-2">
+        <div class="text-3xl leading-wide p-0 my-6 font-medium font-gray-800">Why Choose StockRhino<span class="bg-blue-700 w-2/12 h-1 mt-4 block"></span></div>
+      </div>
+      <div class="lg:col-span-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div class="flex items-center hover:shadow-xl">
+              <div class="w-1/8 py-4 px-6 text-3xl text-white bg-blue-500 h-full flex items-center justify-center">1</div>
+              <div class="bg-white p-4">
+                <p class="text-sm font-bold">Expirenced + SEBI Certified Management Team with 30+ expirence in Financial Markets</p>
+              </div>
+            </div>
+            <div class="flex items-center hover:shadow-xl">
+              <div class="w-1/8 py-4 px-6 text-3xl text-white bg-red-500 h-full flex items-center justify-center">2</div>
+              <div class="bg-white p-4">
+                <p class="text-sm font-bold">NextGen FinTech Platform for investors, traders available 24 x 7 with Mobile App, WhtasApp & Telegram.</p>
+              </div>
+            </div>
+            
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  </main>
+
+  <section class="flex items-center justify-between ml-32 mt-8 mb-1 bg-gray-100 p-2">
+    <div class="stock-rhino-search-advanced flex items-center">
+      <div class="flex items-center mr-2">
+        <input type="text" id="stckrhnQuoteTxt" class="bg-gray-200 border h-6 px-1 text-gray-800"
+          placeholder="Get Quote" autocomplete="off" name="company" />
+        <input type="button" value="Go" class="h-6 bg-blue-500 text-white px-2" />
+      </div>
+      <div class="mr-2">
+        <select id="selMenuSector" name="sector" class="h-6 bg-gray-200">
+          <option value="0" selected="selected">Key Sector Stocks</option>
+          <option value="0" disabled="disabled" style="color: red">
+            ***SECTORS***
+          </option>
+
+          <option value="-1">Options Shortlist</option>
+          <option value="-30000">Top 100 Companies in India</option>
+          <option value="Air">Airlines</option>
+          <option value="Aluminium">Aluminium</option>
+          <option value="AssetManagementComp">
+            Asset Management Companies
+          </option>
+          <option value="Auto">Automobiles</option>
+          <option value="Autoc">Auto Ancillaries</option>
+          <option value="BANKPVT">Banks (Private)</option>
+          <option value="BANKPSU">Banks (PSU)</option>
+          <option value="Cement">Cement</option>
+          <option value="Chemicals">Chemicals</option>
+          <option value="defence">Defence</option>
+          <option value="engg">Engineering</option>
+          <option value="energy">Energy Sources</option>
+          <option value="Fertilizer">Fertilizer</option>
+          <option value="Consprds">FMCG</option>
+          <option value="Food">Food</option>
+          <option value="Hotels">Hotels</option>
+          <option value="Insurance">Insurance</option>
+          <option value="Finance">Inv. &amp; Finance</option>
+          <option value="Media">Media</option>
+          <option value="Mining">Mining</option>
+          <option value="0,MNC">MNC</option>
+          <option value="0,IPHARMA">Indian Pharma</option>
+          <option value="0,MPHARMA">MNC Pharma</option>
+          <option value="0,PSU">PSU</option>
+          <option value="Packaging">Packaging</option>
+          <option value="Paint">Paints</option>
+          <option value="Paper">Paper</option>
+          <option value="Power">Power</option>
+          <option value="ratingagencies">Rating Agencies</option>
+          <option value="construction">Real Estate</option>
+          <option value="reits">REITs</option>
+          <option value="retail">Retailing</option>
+          <option value="Ship">Shipping</option>
+          <option value="0,SOFTL">IT (Large)</option>
+          <option value="0,SOFTO">IT (Others)</option>
+          <option value="Steel">Steel</option>
+          <option value="Sugar">Sugar</option>
+          <option value="Telecom">Telecom</option>
+          <option value="Textiles">Textiles</option>
+          <option value="travelsupportservice">
+            Travel Support Services
+          </option>
+          <option value="0" disabled="disabled" style="color: red">
+            ***GROUPS***
+          </option>
+          <option value="0,RBAJAJ">Rahul Bajaj</option>
+          <option value="0,BIRLA">A V Birla</option>
+          <option value="0,AMBANI">Mukesh Ambani</option>
+
+          <option value="0,TATA">Tata</option>
+          <option value="0,GODREJ">Godrej</option>
+          <option value="0,HDFC">HDFC</option>
+          <option value="0,MAHINDRA">Mahindra</option>
+          <option value="0,ADANI">Adani</option>
+          <option value="0,ICICI">ICICI</option>
+          <option value="0,LART">L&amp;T</option>
+          <option value="0,OMJINDAL">Om Prakash Jindal</option>
+          <option value="0,HINDUJA">Hinduja</option>
+          <option value="0,MURUGAPPA">Murugappa</option>
+          <option value="0,WADIA">Wadia</option>
+          <option value="0,TVS">TVS</option>
+          <option value="0,RPG">RPG</option>
+          <option value="0,INDIABULLS">Indiabulls</option>
+          <option value="0,ESSEL">Essel</option>
+          <option value="0,FUTURE">Future</option>
+          <option value="0,KIRLOSKAR">Kirloskar</option>
+          <option value="0" disabled="disabled" style="color: red">
+            ***INDICES***
+          </option>
+          <option value="BSNX">BSE Sensex</option>
+          <option value="NIFTY">NSE Nifty</option>
+          <option value="1,2">BSE-100</option>
+          <option value="1,29">BSE-200</option>
+          <option value="1,28">BSE-500</option>
+          <option value="-10000">All BSE Indices</option>
+          <option value="1,3">BSE Auto</option>
+          <option value="1,4">BSE Bankex</option>
+          <option value="1,5">BSE Capital Goods</option>
+          <option value="1,6">BSE Consumer Durables</option>
+          <option value="1,7">BSE FMCG</option>
+          <option value="1,8">BSE Healthcare</option>
+          <option value="1,9">BSE IT</option>
+          <option value="1,10">BSE Metal</option>
+          <option value="1,11">BSE Oil &amp; Gas</option>
+          <option value="1,12">BSE PSU</option>
+          <option value="1,13">BSE Teck</option>
+          <option value="1,24">BSE Realty</option>
+          <option value="1,25">BSE Power</option>
+          <option value="1,21">BSE A Group</option>
+          <option value="1,39">BSE B Group</option>
+          <option value="1,32">BSE Mid-Cap</option>
+          <option value="1,33">BSE Small-Cap</option>
+          <option value="1,53">BSE Basic Materials</option>
+          <option value="1,54">BSE Consumer Discretionary</option>
+          <option value="1,55">BSE Industrials</option>
+          <option value="1,56">BSE Utilities</option>
+          <option value="1,57">BSE Sensex 50</option>
+          <option value="1,58">BSE Sensex Next 50</option>
+          <option value="1,59">BSE Bharat 22</option>
+          <option value="1,60">BSE 150 MidCap</option>
+          <option value="1,61">BSE 250 SmallCap</option>
+          <option value="1,62">BSE 250 LargeMidCap</option>
+          <option value="1,63">BSE 400 MidSmallCap</option>
+          <option value="1,64">BSE AllCap</option>
+          <option value="1,65">BSE LargeCap</option>
+          <option value="1,66">BSE SmallCap Select</option>
+          <option value="1,67">BSE 100 LargeCap TMC</option>
+          <option value="1,112">BSE Infra</option>
+          <option value="1,113">BSE Manufacturing</option>
+          <option value="1,114">BSE CPSE</option>
+          <option value="1,115">BSE Private Bank</option>
+          <option value="1,116">BSE Diversified Financials</option>
+          <option value="1,117">BSE Momentum</option>
+          <option value="1,118">BSE Low Volatility</option>
+          <option value="1,119">BSE Quality</option>
+          <option value="1,120">BSE Enhanced Value</option>
+          <option value="1,121">BSE Divident Stability</option>
+          <option value="1,122">S&amp;P BSE IPO</option>
+          <option value="1,123">BSE SMEIPO</option>
+          <option value="1,124">BSE 100 ESG</option>
+          <option value="1,125">BSE Carbonex</option>
+          <option value="1,126">BSE Greenex</option>
+          <option value="1,15">NSE IT</option>
+          <option value="1,23">NSE Nifty Midcap 50</option>
+          <option value="1,26">NSE JR. Nifty</option>
+          <option value="1,27">NSE Bank Nifty</option>
+          <option value="1,68">NIFTY Next 50</option>
+          <option value="1,69">NIFTY 100</option>
+          <option value="1,70">NIFTY 200</option>
+          <option value="1,71">NIFTY 500</option>
+          <option value="-20000">All NSE Indices</option>
+          <option value="1,72">NIFTY MidCap 100</option>
+          <option value="1,73">NIFTY SmallCap 250</option>
+          <option value="1,74">NIFTY SmallCap 50</option>
+          <option value="1,75">NIFTY SmallCap 100</option>
+          <option value="1,76">NIFTY LargeMidCap 250</option>
+          <option value="1,77">NIFTY MidSmallCap 400</option>
+          <option value="1,78">NIFTY Auto</option>
+          <option value="1,79">NIFTY Consumer Durables</option>
+          <option value="1,80">NIFTY Finance</option>
+          <option value="1,81">NIFTY FMCG</option>
+          <option value="1,82">NIFTY Media</option>
+          <option value="1,83">NIFTY Metal</option>
+          <option value="1,84">NIFTY Pharma</option>
+          <option value="1,85">NIFTY Private Bank</option>
+          <option value="1,86">NIFTY PSU Bank</option>
+          <option value="1,87">NIFTY Realty</option>
+          <option value="1,88">NIFTY Oil &amp; Gas</option>
+          <option value="1,89">NIFTY SME Emerge</option>
+          <option value="1,90">NIFTY Commodities</option>
+          <option value="1,91">NIFTY CPSE</option>
+          <option value="1,92">NIFTY Energy</option>
+          <option value="1,93">NIFTY India Consumption</option>
+          <option value="1,94">NIFTY Infra</option>
+          <option value="1,95">NIFTY MNC</option>
+          <option value="1,96">NIFTY PSE</option>
+          <option value="1,97">NIFTY Serv Sector</option>
+          <option value="1,98">NIFTY100 Liquid 15</option>
+          <option value="1,99">NIFTY Midcap Liquid 15</option>
+          <option value="1,100">NIFTY Midcap 150 Quality 50</option>
+          <option value="1,101">NIFTY50 Equal Weight</option>
+          <option value="1,102">NIFTY100 Equal Weight</option>
+          <option value="1,103">NIFTY100 Low Volatility 30</option>
+          <option value="1,104">NIFTY100 Alpha 30</option>
+          <option value="1,105">NIFTY Alpha 50</option>
+          <option value="1,106">NIFTY Dividend Opportunities 50</option>
+          <option value="1,107">NIFTY High Beta 50</option>
+          <option value="1,108">NIFTY Low Volatility 50</option>
+          <option value="1,109">NIFTY200 Quality 30</option>
+          <option value="1,110">NIFTY 500 Value 50</option>
+          <option value="1,111">NIFTY 100 Quality 30</option>
+
+          <option value="0" disabled="disabled" style="color: red">
+            ***ETFs***
+          </option>
+          <option value="Gold">Gold</option>
+          <option value="NIFTYETF">NSE Nifty</option>
+          <option value="SENSEXETF">BSE Sensex</option>
+          <option value="NIFTY100ETF">Nifty 100</option>
+          <option value="NIFTNXT50ETF">Nifty Next 50</option>
+          <option value="SENSEXNXT50ETF">Sensex Next 50</option>
+          <option value="BSE500ETF">BSE 500</option>
+          <option value="MIDCAPETF">Midcap</option>
+          <option value="BANKINGETF">Banking</option>
+          <option value="ITETF">IT</option>
+          <option value="INFRAETF">Infrastructure</option>
+          <option value="FMCGETF">FMCG</option>
+          <option value="GOVTDISETF">Govt. Disinvestment</option>
+          <option value="DIVYLDETF">Dividend Yield</option>
+          <option value="INTETF">International</option>
+          <option value="PSUDEBTETF">PSU Debt</option>
+          <option value="GOVTBONDETF">Govt. Bond</option>
+        </select>
+      </div>
+      <div class="flex items-center mr-2">
+        <input type="text" id="stckrhnSearchTxt" class="bg-gray-200 border h-6 px-1 text-gray-800" placeholder="Search"
+          autocomplete="off" name="company" />
+        <button class="h-6 bg-blue-500 text-white px-2">
+          <i class="las la-search"></i>
+        </button>
+      </div>
+      <a href="#" class="text-sm font-medium text-gray-900 hover:underline">MyStocks</a>
+    </div>
+    <div>
+      <a href="#" class="text-sm font-medium text-red-500 hover:underline">MEMBER'S LOGIN</a>
+    </div>
+  </section>
+  <section class="stock-rhino-ticker ml-32">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async>
+        {
+          "symbols": [{
+              "description": "S&P BSE SENSEX",
+              "proName": "BSE:SENSEX"
+            },
+            {
+              "description": "NIFTY 50",
+              "proName": "NSE:NIFTY"
+            },
+            {
+              "description": "S&P BSE SMALLCAP",
+              "proName": "BSE:SMLCAP"
+            },
+            {
+              "description": "S&P BSE MIDCAP",
+              "proName": "BSE:MIDCAP"
+            },
+            {
+              "description": "NIFTY REALTY",
+              "proName": "NSE:CNXREALTY"
+            },
+            {
+              "description": "NIFTY PHARMA",
+              "proName": "NSE:CNXPHARMA"
+            },
+            {
+              "description": "NIFTY NEXT 50",
+              "proName": "NSE:NIFTYJR"
+            },
+            {
+              "description": "NIFTY METAL",
+              "proName": "NSE:CNXMETAL"
+            },
+            {
+              "description": "NIFTY MEDIA",
+              "proName": "NSE:CNXMEDIA"
+            },
+            {
+              "description": "NIFTY IT",
+              "proName": "NSE:CNXIT"
+            },
+            {
+              "description": "NIFTY INFRA",
+              "proName": "NSE:CNXINFRA"
+            },
+            {
+              "description": "NIFTY FMCG",
+              "proName": "NSE:CNXFMCG"
+            },
+            {
+              "description": "NIFTY ENERGY",
+              "proName": "NSE:CNXENERGY"
+            },
+            {
+              "description": "NIFTY BANK",
+              "proName": "NSE:BANKNIFTY"
+            },
+            {
+              "description": "NIFTY AUTO",
+              "proName": "NSE:CNXAUTO"
+            },
+            {
+              "description": "NIFTY 500",
+              "proName": "NSE:CNX500"
+            }
+          ],
+          "showSymbolLogo": false,
+          "colorTheme": "light",
+          "isTransparent": false,
+          "displayMode": "adaptive",
+          "locale": "en"
+        }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </section>
+  <footer class="ml-32 border-t-4 border-b-4 border-blue-500">
+    <div class="flex md:flex-row flex-col">
+      <section class="px-4 pt-8 w-7/12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div>
+            <p class="text-sm font-semibold mb-2">NewsLetter Signup</p>
+            <p class="text-sm text-gray-400">
+              Keep up with the latest blog posts, product updates & offers by
+              signing up to our newsletter.
+            </p>
+          </div>
+
+          <div>
+            <p class="text-sm font-semibold mb-2">Media</p>
+            <ul>
+              <li><a href="#">Company Profile</a></li>
+              <li><a href="#">Media Coverage</a></li>
+              <li><a href="#">Press Releases</a></li>
+              <li><a href="#">Media Kit</a></li>
+            </ul>
+          </div>
+
+          <!-- <div>
+            <p class="text-sm font-semibold mb-2">Investment Advisor</p>
+            <ul>
+              <li><a href="#">Multi-Baggers</a></li>
+              <li><a href="#">Stock Investments</a></li>
+              <li><a href="#">Investment Manager</a></li>
+              <li><a href="#">Portfolio Review</a></li>
+              <li><a href="#">Portfolio Management</a></li>
+              <li><a href="#">Wealth Management</a></li>
+              <li><a href="#">Members Club</a></li>
+            </ul>
+          </div> -->
+          <!-- 
+          <div>
+            <p class="text-sm font-semibold mb-2">Useful Links</p>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Disclosure</a></li>
+              <li><a href="#">Policies</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Complaints</a></li>
+            </ul>
+          </div> -->
+        </div>
+
+        <div class="stockrhino-footer-tickers mt-4">
+          <div class="flex items-center mb-2">
+            <div class="
+                  w-2/12
+                  text-sm
+                  font-medium
+                  px-2
+                  py-2
+                  border
+                  bg-blue-500
+                  text-white text-center
+                ">
+              TOP SERVICES
+            </div>
+            <div class="
+                  px-4
+                  w-10/12
+                  py-2
+                  font-medium
+                  text-sm text-blue-800
+                  bg-blue-200
+                ">
+              <a class="truncate" href="#" title="">Access and manage all your mails from one unified space with
+                Robust Spam Protection.</a>
+            </div>
+          </div>
+          <div class="flex items-center mb-2">
+            <div class="
+                  w-2/12
+                  text-sm
+                  font-medium
+                  px-2
+                  py-2
+                  border
+                  bg-green-500
+                  text-white text-center
+                ">
+              BLOG FEEDS
+            </div>
+            <div class="
+                  px-4
+                  py-2
+                  w-10/12
+                  font-medium
+                  text-sm text-green-800
+                  bg-green-200
+                ">
+              <a class="truncate" href="#" title="">Access and manage all your mails from one unified space with
+                Robust Spam Protection.</a>
+            </div>
+          </div>
+          <!-- <div class="flex items-center mb-2">
+            <div class="
+                  w-2/12
+                  text-sm
+                  font-medium
+                  px-2
+                  py-2
+                  border
+                  bg-red-500
+                  text-white text-center
+                ">
+              SECURITY
+            </div>
+            <div class="
+                  px-4
+                  w-10/12
+                  py-2
+                  font-medium
+                  text-sm text-red-800
+                  bg-red-200
+                ">
+              <a class="truncate" href="#" title="">Access and manage all your mails from one unified space with
+                Robust Spam Protection.</a>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="stock-rhino-footeralpha">
+          <div class="flex flex-col md:flex-row items-center w-full mb-2">
+            <p class="w-full md:w-3/12 text-sm font-bold">Stock Directory</p>
+            <div class="
+                  w-full
+                  md:w-9/12
+                  flex
+                  justify-between
+                  items-center
+                  text-xs
+                  font-medium
+                ">
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">A</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">B</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">C</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">D</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">E</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">F</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">G</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">H</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">I</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">J</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">K</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">L</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">M</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">N</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">O</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">P</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">Q</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">R</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">S</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">T</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">U</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">V</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">X</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">Y</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">Z</a>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center w-full mb-2">
+            <p class="w-full md:w-3/12 text-sm font-bold">
+              Mutual Fund Directory
+            </p>
+            <div class="
+                  w-full
+                  md:w-9/12
+                  flex
+                  justify-between
+                  items-center
+                  text-xs
+                  font-medium
+                ">
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">A</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">B</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">C</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">D</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">E</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">F</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">G</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">H</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">I</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">J</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">K</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">L</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">M</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">N</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">O</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">P</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">Q</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">R</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">S</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">T</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">U</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">V</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">X</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">Y</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">Z</a>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center w-full mb-2">
+            <p class="w-full md:w-3/12 text-sm font-bold">
+              Commodity Directory
+            </p>
+            <div class="
+                  w-full
+                  md:w-9/12
+                  flex
+                  justify-between
+                  items-center
+                  text-xs
+                  font-medium
+                ">
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">A</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">B</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">C</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">D</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">E</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">F</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">G</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">H</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">I</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">J</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">K</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">L</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">M</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">N</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">O</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">P</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">Q</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">R</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">S</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">T</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">U</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">V</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">X</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">Y</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">Z</a>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center w-full mb-2">
+            <p class="w-full md:w-3/12 text-sm font-bold">
+              Glossary Directory
+            </p>
+            <div class="
+                  w-full
+                  md:w-9/12
+                  flex
+                  justify-between
+                  items-center
+                  text-xs
+                  font-medium
+                ">
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">A</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">B</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">C</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">D</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">E</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">F</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">G</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">H</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">I</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">J</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">K</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">L</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">M</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">N</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">O</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">P</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">Q</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">R</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">S</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">T</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">U</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">V</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">X</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">Y</a>
+              <a href="#" class="
+                    text-blue-700
+                    hover:underline
+                    hover:text-white
+                    hover:bg-blue-700
+                    font-bold
+                    p-1
+                  ">Z</a>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center w-full mb-2">
+            <p class="w-full md:w-3/12 text-sm font-bold">Important links</p>
+            <div class="
+                  w-full
+                  md:w-9/12
+                  flex
+                  justify-between
+                  items-center
+                  text-xs
+                  font-medium
+                ">
+              <a href="https://www.bseindia.com/" target="_blank"
+                class="text-blue-700 hover:underline font-bold p-1">BSE</a>
+              <a href="https://www.nseindia.com/" target="_blank"
+                class="text-blue-700 hover:underline font-bold p-1">NSE</a>
+              <a href="https://www.sebi.gov.in/" target="_blank"
+                class="text-blue-700 hover:underline font-bold p-1">SEBI</a>
+              <a href="#" target="_blank" class="text-blue-700 hover:underline font-bold p-1">Investor Relations</a>
+              <a href="#" target="_blank" class="text-blue-700 hover:underline font-bold p-1">Disclaimer</a>
+              <a href="#" target="_blank" class="text-blue-700 hover:underline font-bold p-1">Cookie Policy</a>
+              <a href="#" target="_blank" class="text-blue-700 hover:underline font-bold p-1">Privacy Policy</a>
+              <a href="#" target="_blank" class="text-blue-700 hover:underline font-bold p-1">GDPR Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-5/12 py-8 bg-blue-800 h-full px-2 text-white">
+        <div>
+          <p class="font-medium text-sm mb-2">About Us</p>
+          <p>
+            StockRhino Intellivest Services - a digital wealth management
+            advisor (cloud based) out of Mumbai, INDIA which provide trading
+            advisory, investment advisory, trading + investing academy, mutual
+            fund advisory, insurance advisory, financial planning services
+            delivered using artificial intelligence, human intelligence +
+            field intelligence + research with sole objective of growing
+            investor wealth + awareness. Our Cloud-based Investor Wealth
+            Management Platform helps investor consume various investment
+            products like equity, mutual funds, IPO's, digital gold, insurance
+            etc combined with state-of-the art trading infrastructure & 24 x 7
+            support.
+          </p>
+
+          <div class="flex md:flex-row flex-col mt-4 mb-4">
+            <ul class="w-1/2">
+              <li><a href="#">Why StockRhino</a></li>
+              <li><a href="#">Company Profile</a></li>
+              <li><a href="#">Management Team</a></li>
+              <li><a href="#">Our Trading Infra</a></li>
+              <li><a href="#">Newsroom</a></li>
+              <li><a href="#">Our Philosophy</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="w-1/2">
+              <li><a href="#">Member Login</a></li>
+              <li><a href="#">Customer Testimonals</a></li>
+              <li><a href="#">Partner Testimonals</a></li>
+              <li><a href="#">Student Testimonials</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Payment Methods</a></li>
+              <li><a href="#">Partner Program</a></li>
+            </ul>
+          </div>
+          <div class="flex items-center">
+            <a href="https://www.facebook.com/StockRhino-106955134956531/" title="Facebook" class="p-2"><i
+                class="lab la-facebook la-2x text-white"></i></a>
+            <a href="https://www.linkedin.com/company/stockrhino/about/" title="LinkedIn" class="p-2"><i
+                class="lab la-linkedin la-2x text-white"></i></a>
+            <a href="https://www.youtube.com/channel/UC2FxyrN92CQcyy6NuYL_dUw" title="Youtube" class="p-2"><i
+                class="lab la-youtube la-2x text-white"></i></a>
+            <a href="https://twitter.com/Stockrhinopro" title="Twitter" class="p-2"><i
+                class="lab la-twitter la-2x text-white"></i></a>
+            <a href="https://in.pinterest.com/stockrhinopro/_saved/" title="Pinterest" class="p-2"><i
+                class="lab la-pinterest la-2x text-white"></i></a>
+            <a href="https://www.instagram.com/stockrhino/" title="Instagram" class="p-2"><i
+                class="lab la-instagram la-2x text-white"></i></a>
+            <a href="https://t.me/stockrhino_infoalerts" title="Telegram" class="p-2"><i
+                class="lab la-telegram la-2x text-white"></i></a>
+            <a href="stockrhino.slack.com" title="Slack" class="p-2"><i class="lab la-slack la-2x text-white"></i></a>
+            <a href="https://www.quora.com/profile/StockRhino" title="Quora" class="p-2"><i
+                class="lab la-quora la-2x text-white"></i></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="stockrhino-footer-ratings grid grid-cols-1 gap-4 mt-4">
+      <div class="flex items-start justify-between">
+        <div>
+          <p class="text-sm font-medium mb-2">Ratings</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-2">
+            <a href="#" target="_blank" rel="noopener noreferrer"><img
+                src="https://www.xcellhost.cloud/hubfs/Facebook.jpg" /></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img
+                src="https://www.xcellhost.cloud/hubfs/Trustpilot.jpg" /></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img
+                src="https://www.xcellhost.cloud/hubfs/Google.jpg" /></a>
+          </div>
+        </div>
+        <div class="px-2 h-16">
+          <p class="text-sm font-medium mb-2">Scanned & Secured By</p>
+          <div class="grid grid-cols-2 gap-4">
+            <a href="#" target="_blank" rel="noopener noreferrer"><img title="SiteLock"
+                src="//shield.sitelock.com/shield/xcellhost.cloud" alt="SiteLock" /></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img
+                src="https://cww.verifytrustseal.com/seal/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb21haW5JZCI6IjI4MzI5IiwidGhlbWUiOiJsaWdodCIsImhvc3RuYW1lIjoibG9naW4uY3dhdGNoLmNvbW9kby5jb20iLCJsYW5ndWFnZSI6ImVuIiwiaWF0IjoxNTU0OTAyMzYzfQ.VWti7bIPrrwj8RwBHjE_DDif63v4LdueXwJ20awFJNY?clang=en" /></a>
+          </div>
+        </div>
+        <div class="px-2 h-16">
+          <p class="text-sm font-medium mb-2">SEBI Registered</p>
+          <div class="grid grid-cols-1 gap-4">
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="./assets/images/sebi.png" /></a>
+          </div>
+        </div>
+        <div class="px-2 h-16">
+          <p class="text-sm font-medium mb-2">Payment Options</p>
+          <div class="grid grid-cols-1 gap-4">
+            <a href="#" target="_blank" rel="noopener noreferrer"><img
+                src="https://www.xcellhost.cloud/hubfs/Payment%20Method.png" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-lg font-medium my-2 text-red-500 text-center">
+      Investment/Trading in markets is subject to market risk.
+    </p>
+    <p class="text-sm font-medium my-2 text-gray-800 text-center">
+      Disclaimer : There is no guarantee of profits or no exceptions from
+      losses. The investment advice provided is solely the personal views of
+      the research team. StockRhino will not accept any liability for loss or
+      damage as a result of reliance on the information contained within this
+      website including data, quotes, charts and buy/sell signals. Please be
+      fully informed regarding the risks and costs associated with trading the
+      financial markets, it is one of the riskiest investment forms possible.
+      Therefore, StockRhino doesn’t bear any responsibility for any trading
+      losses you might incur as a result of using this data.
+    </p>
+    <p class="text-sm font-medium my-2 text-gray-600 text-center">
+      © 2021 StockRhino All Rights Reserved. Designated Trademarks & Brands
+      Are The Properties Of Their Respective Owners.
+    </p>
+  </footer>
+  <div class="floater-right">
+    <a href="#">
+      <div class="flex items-center py-3 pr-2 pl-3  h-16 h-sm-10 bg-red-deals mb-2">
+        <i class="las la-fire la-2x text-white mr-3"></i>
+        <p class="text-2xl text-white mb-0">Hot Deals</p>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="flex items-center py-3 pr-2 pl-3  h-16 h-sm-10 bg-blue-trial mb-2">
+        <i class="las la-tag la-2x text-white mr-3"></i>
+        <p class="text-2xl text-white mb-0">Free Trials</p>
+      </div>
+    </a>
+
+    <a class="sales-enquiry">
+      <div class="flex items-center py-3 pr-2 pl-3  h-16 h-sm-10 bg-green-talk mb-2">
+        <i class="las la-phone la-2x text-white mr-3"></i>
+        <p class="text-2xl text-white mb-0">Let's Talk</p>
+      </div>
+    </a>
+
+    <a href="https://api.whatsapp.com/send?phone=918657414121&amp;text=Hello%21%20I%20need%20support.">
+      <div class="flex items-center py-3 pr-2 pl-3  h-16 h-sm-10 bg-green-whatsapp mb-2">
+        <i class="lab la-whatsapp la-2x text-white mr-3"></i>
+        <p class="text-2xl text-white mb-0">WhatsApp</p>
+      </div>
+    </a>
+
+  </div>
+  <script type="text/javascript" src="./assets/js/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      // Loading Function
+      $('#loading').hide();
+
+      // Toggle Main Pricing Tabs
+      $(".grid__accordion__item").click(function () {
+        $(".grid__accordion__description.showPrice").removeClass("showPrice");
+        $(this).next().toggleClass("showPrice");
+      });
+
+      // Toggle SubMenu Pricing Tabs
+      $(".grid__accordion__description .pricing-tabs div").click(function () {
+
+        // Toggle class to an active tab
+        $(".grid__accordion__description.showPrice .pricing-tabs div.activePricingTab").removeClass(
+          "activePricingTab , bg-blue-100");
+        $(this).toggleClass("activePricingTab , bg-blue-100");
+
+        var currentActiveTab = $(".grid__accordion__description.showPrice .pricing-tabs div.activePricingTab")
+          .attr("tabindex");
+
+        // Toggle class to an active tab content
+        $(".grid__accordion__description.showPrice .pricing-tabs-content div").removeClass(
+          "activePricingTabContent");
+        $(".grid__accordion__description.showPrice .pricing-tabs-content div[tabcontentindex = " +
+            currentActiveTab + ']')
+          .addClass("activePricingTabContent");
+      });
+
+      // Pricing Duration in Tabs
+      var priceDuration = $("#pricingDuration div");
+      priceDuration.click(function () {
+
+        // Remove Existing Background Classes
+        $("#pricingDuration div.bg-blue-700").removeClass("bg-blue-700").addClass("text-blue-700");
+        $(this).addClass("bg-blue-700").removeClass("text-blue-700");
+
+        // Adding Price according to data value
+        const priceSelect = document.querySelector("#pricingDuration");
+        priceSelect.addEventListener("click", function (e) {
+          const duration = e.target.id;
+          const monthlyPricing = $(".planPrice").attr("monthly");
+          const quarterlyPricing = $(".planPrice").attr("quarterly");
+          const semiAnnuallyPricing = $(".planPrice").attr("semiAnually");
+          const annuallyPricing = $(".planPrice").attr("anually");
+
+          if (duration == "monthlyPricing") {
+            $(".planPrice #price").text(monthlyPricing);
+          } else if (duration == "quarterlyPricing") {
+            $(".planPrice #price").text(Math.floor(quarterlyPricing / 3));
+          } else if (duration == "semiAnnuallyPricing") {
+            $(".planPrice #price").text(Math.floor(semiAnnuallyPricing / 6));
+          } else if (duration == "annuallyPricing") {
+            $(".planPrice #price").text(Math.floor(annuallyPricing / 12));
+          }
+
+        })
+
+      });
+
+      // Features Slider with accent background
+      $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:true
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:true
+        }
+    }
+})
+
+    });
+  </script>
+</body>
+
+</html>
